@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/detail_linear_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.kryptkode.cyberman.popularmovies.DetailActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:text = "@string/default_text"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:background="@color/content_background"/>
+
+        <ImageView
+            android:id="@+id/movie_poster_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/image_description"
+            android:layout_margin="@dimen/margin_img1"
+            app:srcCompat="@drawable/no_image" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/release_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:fontFamily="sans-serif"
+                android:text="@string/release_date_text_view_label"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <TextView
+                android:id="@+id/release_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:fontFamily="sans-serif"
+                android:background="@color/content_background"
+                android:padding="@dimen/textview_padding"
+                android:text = "@string/default_text"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/rating_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:fontFamily="sans-serif"
+                android:text="@string/rating_text_view_label"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@color/content_background"
+                android:padding="@dimen/textview_padding"
+                android:text = "@string/default_text"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <TextView
+                android:id="@+id/overview_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:layout_columnSpan="2"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif"
+                android:text="@string/overview_text_view_label"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <TextView
+                android:id="@+id/overview_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:layout_columnSpan="2"
+                android:background="@color/content_background"
+                android:padding="@dimen/textview_padding"
+                android:fontFamily="sans-serif"
+                android:textAlignment="textStart"
+                android:text = "@string/default_text"
+                android:textAppearance="?android:textAppearanceMedium"/>
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
