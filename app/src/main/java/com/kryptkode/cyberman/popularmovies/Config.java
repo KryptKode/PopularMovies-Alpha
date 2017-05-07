@@ -6,7 +6,7 @@ package com.kryptkode.cyberman.popularmovies;
 
 public class Config {
     //set up your API_KEY
-    private static String API_KEY = "eba98b8d5917adbbd6415016502347f4";
+    private static String API_KEY = "YOUR API KEY GOES HERE";
 
     public static String getApiKey() {
         return API_KEY;
